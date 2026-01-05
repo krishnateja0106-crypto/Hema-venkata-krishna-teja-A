@@ -42,7 +42,9 @@
 
     footer{display:flex;justify-content:space-between;align-items:center;margin-top:24px;color:var(--muted);font-size:13px}
 
-    /* Responsive */
+    a{color:var(--accent);text-decoration:none;font-weight:600}
+    a:hover{text-decoration:underline}
+
     @media (max-width:900px){
       .grid{grid-template-columns:1fr;}
       .wrap{margin:20px;padding:20px}
@@ -57,7 +59,7 @@
         <div class="avatar">AH</div>
         <div>
           <h1>Alaparthi Hema Venkata Krishna Teja</h1>
-          <p class="lead">M.Tech (ECE) — Specialization: Micro Electronic System Design</p>
+          <p class="lead">M.Tech (ECE) — Micro Electronic System Design</p>
         </div>
       </div>
       <div class="muted">ID: RA2412705010005</div>
@@ -67,7 +69,7 @@
       <section>
         <div class="card section">
           <h3 style="margin-top:0">About Me</h3>
-          <p class="muted">I am a 2nd-year M.Tech student in Electronics and Communication Engineering with a focus on bridging hardware and software. I enjoy building embedded systems, learning microelectronics, and writing code to make prototypes useful in the real world.</p>
+          <p class="muted">I am a 2nd-year M.Tech student in Electronics and Communication Engineering with a strong interest in microelectronics, VLSI, and embedded systems. I enjoy converting theoretical concepts into working hardware prototypes and continuously improving my software skills to complement hardware design.</p>
         </div>
 
         <div class="card section">
@@ -76,8 +78,8 @@
             <div>
               <div class="muted" style="margin-bottom:8px">Programming</div>
               <div class="skills">
-                <div class="chip">Basic knowledge of Python</div>
-                <div class="chip">Basics of C Language</div>
+                <div class="chip">Python (Basics)</div>
+                <div class="chip">C Language (Basics)</div>
               </div>
             </div>
             <div>
@@ -97,21 +99,29 @@
           <div class="projects">
             <div class="project">
               <h4>Fire Detecting Machine</h4>
-              <p>Prototype using sensors to detect fire and trigger alerts. Focused on safety applications and quick-response systems.</p>
+              <p>Designed a sensor-based fire detection prototype capable of identifying fire conditions and triggering alerts. Focused on safety, reliability, and real-time response.</p>
             </div>
             <div class="project">
               <h4>Mobile Jammer</h4>
-              <p>Device capable of blocking mobile signals in a controlled range. Gained knowledge about RF communication and signal interference.</p>
+              <p>Developed a controlled-range mobile signal jammer. Gained hands-on exposure to RF communication, signal interference, and regulatory considerations.</p>
             </div>
           </div>
+        </div>
+
+        <div class="card section">
+          <h3 style="margin-top:0">Hackathon & Activities</h3>
+          <ul style="margin:8px 0 0 18px;color:var(--muted)">
+            <li>Participated in a Hackathon, collaborating in a team to ideate, design, and present a working solution under time constraints</li>
+            <li>Active participant in technical events and ideathons</li>
+          </ul>
         </div>
 
         <div class="card section">
           <h3 style="margin-top:0">Achievements & Experience</h3>
           <ul style="margin:8px 0 0 18px;color:var(--muted)">
             <li>Completed VLSI Internship (01/06/2025 – 31/07/2025)</li>
-            <li>Built and tested multiple hardware-based prototypes</li>
-            <li>Actively applying concepts in practical projects</li>
+            <li>Hands-on experience in hardware prototyping and testing</li>
+            <li>Strong interest in research-oriented and industry-relevant projects</li>
           </ul>
         </div>
       </section>
@@ -120,7 +130,17 @@
         <div class="card meta">
           <div class="item">
             <div class="label">Contact</div>
-            <div class="value"><a href="mailto:ha5966@srmist.edu.in">ha5966@srmist.edu.in</a><br><a href="tel:+918985675123">+91 8985675123</a></div>
+            <div class="value">
+              <a href="mailto:ha5966@srmist.edu.in">ha5966@srmist.edu.in</a><br>
+              <a href="tel:+918985675123">+91 8985675123</a>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="label">LinkedIn</div>
+            <div class="value">
+              <a href="https://www.linkedin.com/in/krishna-teja-alaparthi-45485b324" target="_blank">linkedin.com/in/krishna-teja-alaparthi</a>
+            </div>
           </div>
 
           <div class="item">
@@ -137,7 +157,6 @@
             <div class="label">Specialization</div>
             <div class="value">Micro Electronic System Design</div>
           </div>
-
         </div>
 
         <div class="card" style="margin-top:14px;text-align:center">
@@ -152,7 +171,7 @@
 
     <footer>
       <div>© 2025 Alaparthi Hema Venkata Krishna Teja</div>
-      <div class="muted">Modernist theme • Clean & Minimal</div>
+      <div class="muted">Clean • Professional • Student Portfolio</div>
     </footer>
   </main>
 </body>
