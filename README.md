@@ -1,162 +1,171 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nukala Srinivas — Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Alaparthi Hema Venkata Krishna Teja — Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
-<style>
-:root{
-  --bg:#ffffff;
-  --text:#111;
-  --muted:#6b7280;
-  --accent:#2563eb;
-  --card:#f9fafb;
-}
+  <style>
+    :root{
+      --bg:#ffffff; --text:#0b0b0b; --muted:#6b7280; --accent:#0f766e; --card:#f8fafb;
+      --radius:14px; --gap:28px; --maxw:980px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui;background:var(--bg);color:var(--text)}
+    .wrap{max-width:var(--maxw);margin:40px auto;padding:30px;border-radius:20px;box-shadow:0 8px 30px rgba(0,0,0,0.06)}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:var(--gap)}
 
-body{
-  margin:0;
-  font-family:Inter, sans-serif;
-  background:var(--bg);
-  color:var(--text);
-}
+    header{display:flex;justify-content:space-between;margin-bottom:20px}
+    .brand{display:flex;gap:16px;align-items:center}
+    .avatar{width:70px;height:70px;border-radius:12px;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700}
+    h1{margin:0}
+    .lead{color:var(--muted)}
 
-.container{
-  max-width:1000px;
-  margin:40px auto;
-  padding:20px;
-}
+    .card{background:var(--card);padding:18px;border-radius:12px;margin-bottom:16px}
+    .muted{color:var(--muted);font-size:14px}
 
-header{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  margin-bottom:30px;
-}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:#fff;padding:6px 10px;border-radius:20px;border:1px solid #eee;font-size:13px}
 
-h1{margin:0}
-.sub{color:var(--muted)}
+    .project{margin-bottom:10px}
+    .project h4{margin:0}
 
-.card{
-  background:var(--card);
-  padding:20px;
-  border-radius:12px;
-  margin-bottom:20px;
-}
+    aside .item{margin-bottom:12px}
 
-.skills span{
-  display:inline-block;
-  padding:6px 12px;
-  margin:5px;
-  background:#fff;
-  border-radius:20px;
-  border:1px solid #ddd;
-  font-size:13px;
-}
+    a{color:var(--accent);text-decoration:none}
 
-.projects div{
-  margin-bottom:10px;
-}
-
-a{
-  color:var(--accent);
-  text-decoration:none;
-}
-
-footer{
-  text-align:center;
-  margin-top:20px;
-  color:var(--muted);
-}
-</style>
+    @media(max-width:900px){
+      .grid{grid-template-columns:1fr}
+    }
+  </style>
 </head>
 
 <body>
-
-<div class="container">
+<main class="wrap">
 
 <header>
-  <div>
-    <h1>Nukala Denda Venkata Rama Sai Srinivas</h1>
-    <div class="sub">B.Tech Student — Electronics & Communication Engineering</div>
+  <div class="brand">
+    <div class="avatar">AH</div>
+    <div>
+      <h1>Alaparthi Hema Venkata Krishna Teja</h1>
+      <div class="lead">M.Tech (ECE) — Micro Electronic System Design</div>
+    </div>
   </div>
-  <div class="sub">ID: RA2411004010759</div>
+  <div class="muted">ID: RA2412705010005</div>
 </header>
+
+<div class="grid">
+
+<section>
 
 <div class="card">
 <h3>About Me</h3>
-<p class="sub">
-I am a B.Tech student in Electronics and Communication Engineering with a strong interest in coding and electronics. 
-I enjoy developing practical solutions and continuously improving my skills in programming and system design.
+<p class="muted">
+2nd-year M.Tech student in Electronics and Communication Engineering with strong interest in microelectronics, VLSI, and embedded systems. Passionate about building real-world hardware solutions and integrating software with electronics.
 </p>
 </div>
 
 <div class="card">
 <h3>Skills</h3>
 <div class="skills">
-<span>Python</span>
-<span>C</span>
-<span>C++</span>
+<div class="chip">Python</div>
+<div class="chip">C (Basics)</div>
+<div class="chip">Microelectronics</div>
+<div class="chip">VLSI</div>
+<div class="chip">Embedded Systems</div>
+<div class="chip">Circuit Design</div>
 </div>
 </div>
 
 <div class="card">
 <h3>Projects</h3>
-<div class="projects">
-<div><b>Car Detector</b> — Basic detection system project</div>
-<div><b>Traffic Signal System</b> — Simulation of traffic control</div>
-<div><b>Digital Lock</b> — Security-based embedded system</div>
+
+<div class="project">
+<h4>Fire Detecting Machine</h4>
+<p class="muted">Sensor-based system for early fire detection and alert generation.</p>
 </div>
+
+<div class="project">
+<h4>Mobile Jammer</h4>
+<p class="muted">Controlled-range mobile signal jammer using RF concepts.</p>
+</div>
+
+<div class="project">
+<h4>Traffic Light Controller using 555 Timer</h4>
+<p class="muted">Designed a traffic signal system using 555 timer IC for sequential light control.</p>
+</div>
+
 </div>
 
 <div class="card">
 <h3>Certifications</h3>
-<ul class="sub">
+<ul class="muted">
 <li>
-<b>Critical Thinking: Change Your Perspective and Think Smarter</b><br>
-Platform: Udemy<br>
-<a href="https://www.udemy.com/certificate/UC-ec064e42-4b6d-4c80-8f04-20eb63626246/" target="_blank">View Certificate</a>
+Critical Thinking: Change Your Perspective and Think Smarter  
+<br>
+<a href="https://www.udemy.com/certificate/UC-f1fe7447-6d4c-48c5-bb78-2d8c2ee48d6d/" target="_blank">View Certificate</a>
 </li>
 </ul>
 </div>
 
 <div class="card">
-<h3>Hackathons & Activities</h3>
-<ul class="sub">
-<li>Active participant in hackathons and technical events</li>
-<li>Collaborated in team-based problem solving</li>
+<h3>Hackathon & Activities</h3>
+<ul class="muted">
+<li>Participated in Clash of Minds Hackathon</li>
+<li>Active in technical events and team-based problem solving</li>
 </ul>
 </div>
 
 <div class="card">
-<h3>Achievements & Experience</h3>
-<ul class="sub">
-<li>Strong interest in coding and development</li>
-<li>Developing websites and web applications</li>
+<h3>Achievements</h3>
+<ul class="muted">
+<li>Completed VLSI Internship (June 2025 – July 2025)</li>
+<li>Built multiple hardware prototypes</li>
 </ul>
 </div>
 
-<div class="card">
-<h3>Contact</h3>
-<p class="sub">
-📧 <a href="mailto:sn0162@srmist.edu.in">sn0162@srmist.edu.in</a><br>
-📱 <a href="tel:+919160033700">9160033700</a><br>
-🔗 <a href="https://www.linkedin.com/in/nukala-srinivas-8283583a0" target="_blank">LinkedIn Profile</a>
-</p>
-</div>
+</section>
+
+<aside>
 
 <div class="card">
-<h3>Specialization</h3>
-<p class="sub">Electronics and Communication Engineering (ECE)</p>
+<div class="item">
+<b>Email</b><br>
+<a href="mailto:ha5966@srmist.edu.in">ha5966@srmist.edu.in</a>
 </div>
 
-<footer>
-© 2025 Nukala Srinivas
+<div class="item">
+<b>Phone</b><br>
+<a href="tel:+918985675123">+91 8985675123</a>
+</div>
+
+<div class="item">
+<b>LinkedIn</b><br>
+<a href="https://www.linkedin.com/in/krishna-teja-alaparthi-45485b324" target="_blank">Profile</a>
+</div>
+
+<div class="item">
+<b>Location</b><br>
+Chennai, India
+</div>
+
+<div class="item">
+<b>Education</b><br>
+M.Tech ECE (2nd Year)
+</div>
+
+</div>
+
+</aside>
+
+</div>
+
+<footer class="muted" style="margin-top:20px;text-align:center">
+© 2025 Alaparthi Hema Venkata Krishna Teja
 </footer>
 
-</div>
-
+</main>
 </body>
 </html>
